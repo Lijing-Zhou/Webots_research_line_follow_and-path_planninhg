@@ -1,5 +1,5 @@
 # Webots_research_line_follow_and-path_planninhg
-这是我2021年在布里斯托大学做的在webot环境下的小车寻线。和在webots环境下的VFH+和BUG路径动态路径规划算法的实现。
+这是我2021年在布里斯托大学做的在webot环境下的小车寻线。和在webots环境下的VFH+和BUG路径动态路径规划算法的实现。详情可见这个GitHub中的论文。
 
 
 
