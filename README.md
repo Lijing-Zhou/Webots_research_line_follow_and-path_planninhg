@@ -1,9 +1,18 @@
 # Webots_research_line_follow_and-path_planninhg
-Autonomous positioning and obstacle avoidance are important prerequisites for service robots to provide services. In
+这是我2021年在布里斯托大学做的在webot环境下的小车寻线。和在webots环境下的VFH+和BUG路径动态路径规划算法的实现。
+
+
+
+
+
+
+Autonomous positioning and obstacle avoidance are important 
+prerequisites for service robots to provide services. In
 an unknown environment, autonomous mobile robots need to
 rely on their own sensors to continuously obtain information
 about the surrounding environment, identify the location of
-obstacles, and perform calculations and autonomous decisionmaking. All mobile robots have certain characteristics of
+obstacles, and perform calculations and autonomous decision
+making. All mobile robots have certain characteristics of
 collision avoidance, from the original algorithm to the use
 of complex algorithms to prevent the robot from avoiding
 obstacles. Real-time obstacle avoidance algorithms are much
@@ -15,7 +24,9 @@ obstacle and move towards the original goal. Usually, the
 program requires the robot to stop from the obstacle, take a
 measurement, and then resume movement. Obstacle avoidance
 can lead to non-optimal paths because no existing knowledge
-of the environment is used [3].
+of the environment is used.
+
+
 Based on the study of Webots software this semester, our
 group continue to explore this practical problem as the theme
 of this project. According to the investigation, it is found
@@ -30,7 +41,8 @@ of the path to show the performance.
 In Section II, this paper will sort out and explain the VFH
 algorithm and simplified BUG algorithm. Then, in the Section
 III how to simulate the realization of the robot in the Webots
-software to follow the VFH algorithm for real-time obstacle avoidance navigation is introduced. The section IV will
+software to follow the VFH algorithm for real-time obstacle 
+avoidance navigation is introduced. The section IV will
 conduct experimental tests on the VFH algorithm developed
 in this project, construct obstacles in different positions, test
 the results of the algorithm to achieve obstacle avoidance
