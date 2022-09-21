@@ -1,0 +1,81 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  info [
+    "This behavior-based controller allows the e-puck robot to follow the black line, avoid obstacles and recover its path afterwards."
+    "This model of the e-puck is equipped with ground sensors, located at the front of the e-puck."
+    "Thanks to Jean-Christophe Zufferey (EPFL-LIS)."
+  ]
+  title "E-Puck"
+  coordinateSystem "NUE"
+  lineScale 0.04
+}
+Viewpoint {
+  orientation 0.7782335008951303 0.5145593336128454 0.3599740411146529 4.8187128197299645
+  position -0.37361994408758215 0.7720622111434639 0.5191114544637255
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.5 1.5
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "C:/Users/31950/Desktop/unnamed.jpg"
+      ]
+    }
+    roughness 0.2
+    metalness 0
+  }
+  wallHeight 0.05
+}
+DEF OBSTACLE3 Solid {
+  translation -0.187987 0.025 0.341583
+  rotation 0 1 0 1.54261
+  scale 0.5 0.5 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.2 0.05 0.05
+      }
+    }
+  ]
+  name "gray box(1)"
+  boundingObject USE BOX3
+}
+DEF OBSTACLE3 Solid {
+  translation -0.117788 0.025 0.429422
+  rotation 0 1 0 2.07276
+  scale 0.5 0.5 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.2 0.05 0.05
+      }
+    }
+  ]
+  name "gray box"
+  boundingObject USE BOX3
+}
+DEF EPUCK E-puck {
+  translation -0.32938700001010623 -6.401256045031507e-05 0.3349080000088565
+  rotation -4.744876871424687e-06 -0.999999999939905 -9.883127930749907e-06 0.7799999886078772
+  controller "labsheet_L1"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
